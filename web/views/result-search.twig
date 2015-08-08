@@ -1,0 +1,53 @@
+{% extends 'layout.twig' %}
+{% block body %}
+<div style="margin-top:50px; height:300px" class="gray">
+	<div class="container" style="padding-top:25px">
+		<div class="row">
+			<div class="col-lg-8">
+				<h1><b>Result of " {{ key }} "</b></h1>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container" style="margin-top:25px">
+	{% if arrayObj|length == 0 and arrayObjProduit|length == 0 %}
+		<h2>Aucun résultat</h2>
+	{% endif %}
+	{% for obj in arrayObj %}
+		<h3><a href="{{ app.url_generator.generate(obj.summary) }}"> {{ obj.title }} </a></h3>
+		<p>
+			{{ obj.text [:200] |nl2br }}
+		</p>
+	{% endfor %}
+	<div class="row">
+				{% if arrayObjProduit|length %}
+				<div class="col-lg-12">
+					<hr>
+					<h2 class="fgray"><b>Produit result</b></h2>
+				</div>
+					{% for result in arrayObjProduit %}
+					<div class="col-lg-3" style="margin-bottom:20px">
+						<h2 style="margin:0">{{ result.title }}</h2>
+						<p>
+							<b class="flime"><small><i class="glyphicon  glyphicon-tags"></i> {{ result.summary }}</small></b>
+						</p>
+						<p>
+							{% if result.img != null %}
+								<img src="{{ asset('/uploads/') }}{{ result.img }}" width=100%/>
+							{% endif %}
+						</p>
+						<p style="text-align: justify">
+							{{ result.text }}
+						</p>
+						<p>
+							<button class="emerald" style="margin-right:10px">Download</button>
+						</p>
+					</div>
+					{% endfor %}
+				{% endif %}
+	</div>
+	
+</div>
+
+{% endblock %}

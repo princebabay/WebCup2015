@@ -1,0 +1,1205 @@
+/* 
+Additional letter-spacing for the document and its controls.
+*/
+body, 
+button, input,
+textarea, .win-textarea, 
+select, option {
+    letter-spacing: 0.02em;
+}
+
+/*
+Text input controls.
+*/
+
+input[type=text], input[type=password], input[type=email], input[type=number],
+input[type=tel], input[type=url], input[type=search], textarea, .win-textarea {
+    -ms-user-select: element;
+    min-height: 28px;
+    min-width: 64px;
+    margin: 4px 0;
+    border-width: 2px;
+    border-style: solid;
+    font-size: 11pt;
+    font-weight: 400;
+    line-height: 1.3636; /* 20px when font-size is 11pt */
+}
+
+input[type=text], input[type=password], input[type=email], input[type=number],
+input[type=tel], input[type=url], input[type=search] {
+    width: 276px;
+    padding: 0;
+}
+input::-ms-value {
+    margin: 4px 8px;
+}
+
+textarea, .win-textarea {
+    overflow-y: scroll;
+    word-wrap: break-word;
+    padding: 4px 8px;
+    /* Leave space for autohiding scrollbar on elements that enable text selection. */
+    padding-right: 17px;
+}
+textarea:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm), .win-textarea:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm) {
+    /* Flip sides for autohiding scrollbar padding on RTL layouts. */
+    padding-right: 8px;
+    padding-left: 17px;
+}
+textarea {
+    min-width: 260px;
+    min-height: 39px;
+}
+.win-textarea {
+    width: 260px;
+    height: 39px;
+}
+
+/*
+Clear and reveal button styles.
+*/
+
+input::-ms-clear, input::-ms-reveal {
+    margin-left: 2px;
+}
+input:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm)::-ms-clear,
+input:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm)::-ms-reveal {
+    margin-left: 0;
+    margin-right: 2px;
+}
+
+/*
+Button control.
+*/
+button, input[type=button], input[type=reset], input[type=submit] {
+    min-height: 32px; /* content (20px) + padding + border */
+    min-width: 90px;
+    padding: 4px 8px;
+    border-width: 2px;
+    border-style: solid;
+    background-clip: padding-box;
+    font-size: 11pt;
+    font-weight: 600;
+    line-height: 1.3636; /* 20px when font-size is 11pt */
+}
+
+/*
+File upload control.
+*/
+input[type=file] {
+    border: none;
+    min-width: 100px;
+    min-height: 20px;
+    width: 340px;
+    height: 32px;
+    padding: 0;
+    margin: 7px 8px 21px 8px;
+    background-clip: padding-box;
+}
+input[type=file]::-ms-value {
+    margin: 0;
+    border-width: 2px;
+    border-style: solid;
+    border-right-style: none;
+    border-radius: 0;
+    background-clip: padding-box;
+    font-size: 11pt;
+    font-weight: 400;
+    line-height: 1.3636; /* 20px when font-size is 11pt */
+}
+input[type=file]:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm)::-ms-value {
+    border-left-style: none;
+    border-right-style: solid;
+}
+input[type=file]::-ms-browse {
+    margin: 0;
+    padding: 0 18px;
+    border-width: 2px;
+    border-style: solid;
+    background-clip: padding-box;
+    font-size: 11pt;
+    font-weight: 600;
+    line-height: 1.3636; /* 20px when font-size is 11pt */
+}
+
+/*
+No underline or special cursor on links.
+*/
+a {
+    text-decoration: none;
+    cursor: default;
+}
+
+/*
+No border on images when in a link.
+*/
+img {
+    border-style: none;
+}
+
+/*
+Select control.
+*/
+select {
+    min-height: 32px;
+    min-width: 80px;
+    border-width: 2px;
+    border-style: solid;
+    margin: 4px 0;
+    font-size: 11pt;
+    font-weight: 400;
+    line-height: 1.3636; /* 20px when font-size is 11pt */
+}
+select::-ms-value {
+    padding: 4px 8px;
+    margin: 0;
+}
+select::-ms-expand {
+    border: 0;
+    padding-left: 6px;
+    padding-right: 6px;
+    background-color: transparent;
+}
+
+/*
+Radio button and checkbox shared styles.
+*/
+input::-ms-check {
+    border-width: 2px;
+    border-style: solid;
+    display: inline-block;
+}
+
+/*
+Radio button.
+*/
+input[type=radio] {
+    width: 23px;
+    height: 23px;
+    margin-left: -1px;
+    margin-right: 4px;
+    margin-bottom: -2px;
+}
+input[type=radio]:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm) {
+    margin-left: 4px;
+    margin-right: -1px;
+}
+
+/*
+Checkbox.
+*/
+input[type=checkbox] {
+    width: 21px;
+    height: 21px;
+    margin-right: 5px;
+}
+input[type=checkbox]:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm) {
+    margin-right: 0;
+    margin-left: 5px;
+}
+
+/*
+Range control.
+*/
+input[type=range] {
+    width: 280px;
+    height: auto;
+    padding: 17px 0 32px 0;
+}
+input[type=range]::-ms-track {
+    padding: 0;
+    width: auto;
+    height: 11px;
+    border-style: none;
+    color: transparent; /* ticks hidden by default */
+}
+input[type=range]::-ms-thumb {
+    width: 11px;
+    height: 11px;
+    border-style: none;
+}
+input[type=range]::-ms-ticks-before, input[type=range]::-ms-ticks-after {
+    width: 100%;
+    height: 5px;
+    display: none;
+}
+input[type=range]:disabled::-ms-fill-lower {
+    margin-right: 5px;
+}
+input[type=range]:disabled::-ms-fill-upper {
+    margin-left: 6px;
+}
+input[type=range]:disabled:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm)::-ms-fill-lower {
+    margin-right: 0;
+    margin-left: 5px;
+}
+input[type=range]:disabled:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm)::-ms-fill-upper {
+    margin-left: 0;
+    margin-right: 6px;
+}
+
+/*
+Vertical range control.
+*/
+input[type=range].win-vertical {
+    width: auto;
+    height: 191px;
+    padding: 0 17px;
+    writing-mode: bt-lr; 
+}
+input[type=range].win-vertical:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm) {
+    writing-mode: bt-rl;
+}
+input[type=range].win-vertical::-ms-track {
+    width: 11px;
+    height: auto;
+}
+input[type=range].win-vertical:disabled::-ms-fill-lower {
+    margin-right: 0;
+    margin-top: 6px;
+}
+input[type=range].win-vertical:disabled::-ms-fill-upper {
+    margin-left: 0;
+    margin-bottom: 5px;
+}
+input[type=range].win-vertical:disabled:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm)::-ms-fill-lower {
+    margin-left: 0;
+}
+input[type=range].win-vertical:disabled:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm)::-ms-fill-upper {
+    margin-right: 0;
+}
+
+input[type=range].win-vertical::-ms-ticks-before,
+input[type=range].win-vertical::-ms-ticks-after {
+    width: 5px;
+    height: 100%;
+    display: none;
+}
+
+/*
+Back button.
+*/
+.win-backbutton {
+    display: inline-block;
+    min-width: 0;
+    min-height: 0;
+    background-clip: border-box;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border-width: 2px;
+    border-style: solid;
+    padding: 0;
+    text-align: center;
+
+    /* Normal sizing. */
+    width: 41px;
+    height: 41px;
+    font-size: 14pt;
+    line-height: 37px; /* line-height must match the content box height. */
+    vertical-align: baseline;
+}
+.win-backbutton:hover, .win-backbutton:hover:active {
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 50%;
+	color:black;
+	text-decoration:none;
+}
+.win-backbutton::before {
+    font-family: "Segoe UI Symbol";
+    font-weight: normal;
+    content: "\E0D5";
+    vertical-align: 50%;
+}
+.win-backbutton:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm)::before {
+    content: "\E0AE";
+}
+.win-backbutton:disabled, .win-backbutton:disabled:active {
+    visibility: hidden;
+}
+
+/*
+Back button snapped view sizing.
+*/
+@media (-ms-view-state: snapped) {
+    .win-backbutton {
+        width: 30px;
+        height: 30px;
+        font-size: 10pt;
+        line-height: 26px; /* line-height must match the content box height */
+        vertical-align: -0.37em;
+    }
+}
+
+/*
+Rating control.
+*/
+.win-rating {
+    display: -ms-inline-flexbox;
+    height: auto;
+    width: auto;
+    white-space: normal;
+    -ms-flex-align: stretch;
+    -ms-flex-pack: center;
+}
+
+.win-rating .win-star {
+    -ms-flex: 1 1 auto;
+    height:28px;
+    width: 28px;
+    padding: 0 6px;
+    font-family: "Segoe UI Symbol";
+    font-size: 28px;
+    overflow: hidden;
+    text-indent: 0;
+    line-height: 1;
+    cursor: default;
+    position: relative;
+    letter-spacing: 0; /* Use letter-spacing: 0 to make average star look like one glyph. */
+    -ms-touch-action: none;
+}
+.win-rating.win-small .win-star {
+    width: 14px;
+    height: 14px;
+    font-size: 14px;
+    padding: 0 3px;
+}
+.win-rating .win-star:before {
+    content: "\E082";
+}
+.win-rating .win-star.win-disabled {
+    cursor: default;
+    -ms-touch-action: auto;
+}
+
+body {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+.win-ui-dark .win-type-interactive:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+.win-ui-dark .win-type-interactive:hover:active {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.win-ui-dark .win-type-interactive:-ms-keyboard-active {
+    color: rgba(255, 255, 255, 0.4);
+}
+.win-type-interactive:hover {
+    color: rgba(0, 0, 0, 0.8);
+}
+.win-type-interactive:hover:active {
+    color: rgba(0, 0, 0, 0.4);
+}
+.win-type-interactive:-ms-keyboard-active {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+/*
+These classes reverse the colors on the subtree to which they are applied.
+*/
+
+.win-ui-light {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+.win-ui-dark {
+    color: rgb(255, 255, 255);
+    background-color: rgb(29, 29, 29);
+}
+
+/*
+Text selection color
+*/
+::selection {
+    background-color: rgb(87, 41, 193);
+    color: rgb(255, 255, 255);
+}
+
+/*
+Text input, checkbox, radio, and select control colors.
+*/
+.win-ui-dark input[type=text], .win-ui-dark input[type=password],
+.win-ui-dark input[type=email], .win-ui-dark input[type=number],
+.win-ui-dark input[type=tel], .win-ui-dark input[type=url],
+.win-ui-dark input[type=search], .win-ui-dark textarea, .win-ui-dark .win-textarea,
+.win-ui-dark select, .win-ui-dark input::-ms-check {
+    background-clip: border-box;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-color: transparent;
+    color: rgb(0, 0, 0);
+}
+.win-ui-dark input[type=text]:hover, .win-ui-dark input[type=password]:hover, 
+.win-ui-dark input[type=email]:hover, .win-ui-dark input[type=number]:hover, 
+.win-ui-dark input[type=tel]:hover, .win-ui-dark input[type=url]:hover,
+.win-ui-dark input[type=search]:hover, .win-ui-dark textarea:hover, 
+.win-ui-dark .win-textarea:hover, .win-ui-dark select:hover, .win-ui-dark input:hover::-ms-check {
+    background-clip: border-box;
+    background-color: rgba(255, 255, 255, 0.87);
+    border-color: transparent;
+    color: rgb(0, 0, 0);
+}
+.win-ui-dark input:hover:active::-ms-check { /* only checkbox and radio have press state */
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+.win-ui-dark input:-ms-keyboard-active::-ms-check { /* only checkbox and radio have press state */
+    background-color: rgb(255, 255, 255);
+}
+.win-ui-dark input[type=text]:focus, .win-ui-dark input[type=text]:active,
+.win-ui-dark input[type=password]:focus, .win-ui-dark input[type=password]:active,
+.win-ui-dark input[type=email]:focus, .win-ui-dark input[type=email]:active,
+.win-ui-dark input[type=number]:focus, .win-ui-dark input[type=number]:active,
+.win-ui-dark input[type=tel]:focus, .win-ui-dark input[type=tel]:active,
+.win-ui-dark input[type=url]:focus, .win-ui-dark input[type=url]:active,
+.win-ui-dark input[type=search]:focus, .win-ui-dark input[type=search]:active,
+.win-ui-dark textarea:focus, .win-ui-dark textarea:active,
+.win-ui-dark .win-textarea:focus, .win-ui-dark .win-textarea:active,
+.win-ui-dark select:focus, .win-ui-dark select:active {
+    background-clip: border-box;
+    background-color: rgb(255, 255, 255);
+    border-color: transparent;
+    color: rgb(0, 0, 0);
+}
+.win-ui-dark input[type=text]:disabled, .win-ui-dark input[type=password]:disabled,
+.win-ui-dark input[type=email]:disabled, .win-ui-dark input[type=number]:disabled,
+.win-ui-dark input[type=tel]:disabled, .win-ui-dark input[type=url]:disabled, 
+.win-ui-dark input[type=search]:disabled, .win-ui-dark input[type=file]::-ms-value,
+.win-ui-dark textarea:disabled, .win-ui-dark .win-textarea:disabled, .win-ui-dark select:disabled {
+    background-clip: border-box;
+    background-color: transparent;
+    border-color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.4);
+}
+.win-ui-dark input:disabled::-ms-check, .win-ui-dark input:disabled:active::-ms-check { /* checkbox and radio have filled disabled state in dark */
+    background-clip: border-box;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-color: transparent;
+    color: rgba(0, 0, 0, 0.4);
+}
+input[type=text], input[type=password],
+input[type=email], input[type=number],
+input[type=tel], input[type=url],
+input[type=search], select, textarea,
+.win-textarea, input::-ms-check {
+    background-clip: padding-box;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-color: rgba(0, 0, 0, 0.27);
+    color: rgb(0, 0, 0);
+}
+input[type=text]:hover, input[type=password]:hover, 
+input[type=email]:hover, input[type=number]:hover, 
+input[type=tel]:hover, input[type=url]:hover,
+input[type=search]:hover, textarea:hover,
+select:hover, .win-textarea:hover, input:hover::-ms-check {
+    background-color: rgba(255, 255, 255, 0.87);
+    border-color: rgba(0, 0, 0, 0.44);
+    color: rgb(0, 0, 0);
+}
+input[type=text]:focus, input[type=text]:active,
+input[type=password]:focus, input[type=password]:active,
+input[type=email]:focus, input[type=email]:active,
+input[type=number]:focus, input[type=number]:active,
+input[type=tel]:focus, input[type=tel]:active,
+input[type=url]:focus, input[type=url]:active,
+input[type=search]:focus, input[type=search]:active,
+textarea:focus, textarea:active,
+.win-textarea:focus, .win-textarea:active,
+select:focus, select:active {
+    background-color: rgb(255, 255, 255);
+    border-color: rgba(0, 0, 0, 0.6);
+    color: rgb(0, 0, 0);
+}
+input:hover:active::-ms-check { /* only checkbox and radio have press state */
+    background-clip: border-box;
+    background-color: rgb(0, 0, 0);
+    border-color: transparent;
+    color: rgb(255, 255, 255);
+}
+input:-ms-keyboard-active::-ms-check { /* only checkbox and radio have press state */
+    background-clip: border-box;
+    background-color: rgb(0, 0, 0);
+    border-color: transparent;
+    color: rgb(255, 255, 255);
+}
+input[type=text]:disabled, input[type=password]:disabled,
+input[type=email]:disabled, input[type=number]:disabled,
+input[type=tel]:disabled, input[type=url]:disabled, 
+input[type=search]:disabled, input[type=file]::-ms-value,
+textarea:disabled, .win-textarea:disabled, select:disabled,
+input:disabled::-ms-check, input:disabled:active::-ms-check {
+    background-clip: padding-box;
+    background-color: rgba(202, 202, 202, 0.4);
+    border-color: rgba(0, 0, 0, 0.15);
+    color: rgba(0, 0, 0, 0.4);
+}
+
+/*
+Placeholder text style.
+*/
+.win-ui-dark input[type]:-ms-input-placeholder, input[type]:-ms-input-placeholder,
+.win-ui-dark textarea:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.6); /* same in dark and light */
+}
+.win-ui-dark input[type]:disabled:-ms-input-placeholder, .win-ui-dark textarea:disabled:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.22);
+}
+input[type]:disabled:-ms-input-placeholder, textarea:disabled:-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.22);
+}
+
+/*
+Invalid style.
+*/
+input[type]:invalid {
+    outline-color: rgb(255, 128, 51);
+    outline-width: 2px;
+}
+
+/*
+Clear and reveal buttons.
+*/
+input::-ms-clear, input::-ms-reveal {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+input::-ms-clear:hover, input::-ms-reveal:hover {
+    background-color: rgb(222, 222, 222);
+}
+input::-ms-clear:hover:active, input::-ms-reveal:hover:active {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+/*
+Option for select control (all colors are same for both light and dark).
+*/
+option:checked, select:focus::-ms-value {
+    color: rgb(255, 255, 255);
+    background-color: rgb(70, 23, 180);
+}
+option:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(197, 197, 197);
+}
+select:focus option:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(222, 222, 222);
+}
+option:checked:hover, select:focus option:checked:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(95, 55, 190);
+}
+option:hover:active, select:focus option:hover:active{
+    color: rgb(0, 0, 0);
+    background-color: rgb(211, 211, 211);
+}
+.win-ui-dark option:checked:disabled, .win-ui-dark option:checked:disabled:active,
+.win-ui-dark optgroup:disabled option:checked, .win-ui-dark optgroup:disabled option:checked:active,
+.win-ui-dark select:disabled option:checked, .win-ui-dark select:disabled option:checked:active,
+.win-ui-dark select:disabled:focus::-ms-value {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: rgba(0, 0, 0, 0.6);
+}
+option:checked:disabled, option:checked:disabled:active,
+optgroup:disabled option:checked, optgroup:disabled option:checked:active,
+select:disabled option:checked, select:disabled option:checked:active,
+select:disabled:focus::-ms-value {
+    background-color: rgba(0, 0, 0, 0.55);
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/*
+Button control colors.
+*/
+.win-ui-dark button, .win-ui-dark input[type=button], .win-ui-dark input[type=submit],
+.win-ui-dark input[type=reset], .win-ui-dark input[type=file]::-ms-browse {
+    background-color: transparent;
+    border-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+}
+.win-ui-dark button[type=submit], .win-ui-dark input[type=submit] {
+    background-clip: padding-box;
+    background-color: rgb(70, 23, 180);
+}
+.win-ui-dark button:hover, .win-ui-dark input[type=button]:hover, .win-ui-dark input[type=reset]:hover,
+.win-ui-dark input[type=file]::-ms-browse:hover {
+    background-color: rgba(255, 255, 255, 0.13);
+    border-color: rgb(255, 255, 255);
+}
+.win-ui-dark button[type=submit]:hover, .win-ui-dark input[type=submit]:hover {
+    background-clip: padding-box;    
+    background-color: rgb(95, 55, 190);
+    border-color: rgb(255, 255, 255);
+}
+.win-ui-dark button:hover:active, .win-ui-dark button[type=submit]:hover:active,
+.win-ui-dark input[type=button]:hover:active, .win-ui-dark input[type=reset]:hover:active,
+.win-ui-dark input[type=submit]:hover:active, .win-ui-dark input[type=file]::-ms-browse:hover:active {
+    background-clip: border-box;
+    background-color: rgb(255, 255, 255);
+    border-color: transparent;
+    color: rgb(0, 0, 0);
+}
+.win-ui-dark button:-ms-keyboard-active, .win-ui-dark button[type=submit]:-ms-keyboard-active,
+.win-ui-dark input[type=button]:-ms-keyboard-active, .win-ui-dark input[type=reset]:-ms-keyboard-active,
+.win-ui-dark input[type=submit]:-ms-keyboard-active {
+    background-clip: border-box;
+    background-color: rgb(255, 255, 255);
+    border-color: transparent;
+    color: rgb(0, 0, 0);
+}
+.win-ui-dark button:disabled, .win-ui-dark button[type=submit]:disabled,
+.win-ui-dark input[type=button]:disabled, .win-ui-dark input[type=reset]:disabled,
+.win-ui-dark input[type=submit]:disabled, .win-ui-dark input[type=file]:disabled::-ms-browse,
+.win-ui-dark button:disabled:active, .win-ui-dark button[type=submit]:disabled:active,
+.win-ui-dark input[type=button]:disabled:active, .win-ui-dark input[type=reset]:disabled:active,
+.win-ui-dark input[type=submit]:disabled:active, .win-ui-dark input[type=file]:disabled::-ms-browse:active {
+    background-color: transparent;
+    border-color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.4);
+}
+button, input[type=button], input[type=submit],
+input[type=reset], input[type=file]::-ms-browse {
+    background-color: rgba(182, 182, 182, 0.7);
+    border-color: rgba(0, 0, 0, 0.2);
+    color: rgb(0, 0, 0);
+}
+button[type=submit], input[type=submit]{
+    background-clip: border-box;
+    background-color: rgb(70, 23, 180);
+    border-color: transparent;
+    color: rgb(255, 255, 255);
+}
+button:hover, input[type=button]:hover, input[type=reset]:hover,
+input[type=file]::-ms-browse:hover {
+    background-color: rgba(205, 205, 205, 0.82);
+    border-color: rgba(164, 164, 164, 0.45);
+}
+button[type=submit]:hover, input[type=submit]:hover {
+    background-clip: border-box;
+    background-color: rgb(95, 55, 190);
+    border-color: transparent;
+}
+button:hover:active, button[type=submit]:hover:active,
+input[type=button]:hover:active, input[type=reset]:hover:active,
+input[type=submit]:hover:active, input[type=file]::-ms-browse:hover:active {
+    background-clip: border-box;
+    background-color: rgb(0, 0, 0);
+    border-color: transparent;
+    color: rgb(255, 255, 255);
+}
+button:-ms-keyboard-active, button[type=submit]:-ms-keyboard-active,
+input[type=button]:-ms-keyboard-active, input[type=reset]:-ms-keyboard-active,
+input[type=submit]:-ms-keyboard-active {
+    background-clip: border-box;
+    background-color: rgb(0, 0, 0);
+    border-color: transparent;
+    color: rgb(255, 255, 255);
+}
+button:disabled, button[type=submit]:disabled,
+input[type=button]:disabled, input[type=reset]:disabled,
+input[type=submit]:disabled, input[type=file]:disabled::-ms-browse,
+button:disabled:active, button[type=submit]:disabled:active,
+input[type=button]:disabled:active, input[type=reset]:disabled:active,
+input[type=submit]:disabled:active, input[type=file]:disabled::-ms-browse:active {
+    background-color: rgba(202, 202, 202, 0.4);
+    border-color: rgba(0, 0, 0, 0.08);
+    color: rgba(0, 0, 0, 0.4);
+}
+input[type=file]:disabled::-ms-browse, input[type=file]:disabled::-ms-browse:active {
+    border-color: rgba(0, 0, 0, 0.15);
+}
+
+/*
+File upload control colors.
+*/
+input[type=file] {
+    background-color: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+/*
+Link colors.
+*/
+.win-ui-dark a {
+    color: rgb(156, 114, 255);
+}
+.win-ui-dark a:hover:active {
+    color: rgba(156, 114, 255, 0.6);
+}
+.win-ui-dark a:hover {
+    color: rgba(156, 114, 255, 0.8);
+}
+.win-ui-dark a[disabled], .win-ui-dark a[disabled]:active { /* :disabled pseudo-class doesn't apply to a, even though disabled attribute stops navigation */
+    color: rgba(255, 255, 255, 0.4);
+}
+a {
+    color: rgb(79, 26, 203);
+}
+a:hover:active {
+    color: rgba(79, 26, 203, 0.6);
+}
+a:hover {
+    color: rgba(79, 26, 203, 0.8);
+}
+a[disabled], a[disabled]:active { /* :disabled pseudo-class doesn't apply to a, even though disabled attribute stops navigation */
+    color: rgba(0, 0, 0, 0.4);
+}
+
+/*
+Range control colors.
+*/
+input[type=range], input[type=range]::-ms-track {
+    background-color: transparent;
+}
+
+.win-ui-dark input[type=range]::-ms-fill-lower {
+    background-color: rgb(91, 46, 197);
+}
+.win-ui-dark input[type=range]:hover::-ms-fill-lower {
+    background-color: rgb(114, 75, 205);
+}
+.win-ui-dark input[type=range]:active::-ms-fill-lower {
+    background-color: rgb(129, 82, 239);
+}
+.win-ui-dark input[type=range]:disabled::-ms-fill-lower {
+    background-color: rgba(255, 255, 255, 0.23);
+}
+input[type=range]::-ms-fill-lower {
+    background-color: rgb(70, 23, 180);
+}
+input[type=range]:hover::-ms-fill-lower {
+    background-color: rgb(95, 55, 190);
+}
+input[type=range]:active::-ms-fill-lower {
+    background-color: rgb(114, 65, 228);
+}
+input[type=range]:disabled::-ms-fill-lower {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.win-ui-dark input[type=range]::-ms-fill-upper {
+    background-color: rgba(255, 255, 255, 0.16);
+}
+.win-ui-dark input[type=range]:hover::-ms-fill-upper {
+    background-color: rgba(255, 255, 255, 0.18);
+}
+.win-ui-dark input[type=range]:active::-ms-fill-upper {
+    background-color: rgba(255, 255, 255, 0.23);
+}
+.win-ui-dark input[type=range]:disabled::-ms-fill-upper {
+    background-color: rgba(255, 255, 255, 0.16);
+}
+input[type=range]::-ms-fill-upper {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+input[type=range]:hover::-ms-fill-upper {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+input[type=range]:active::-ms-fill-upper {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+input[type=range]:disabled::-ms-fill-upper {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.win-ui-dark input[type=range]::-ms-thumb {
+    background-color: rgb(255, 255, 255);
+}
+.win-ui-dark input[type=range]:disabled::-ms-thumb {
+    background-color: rgb(126, 126, 126);
+}
+input[type=range]::-ms-thumb {
+    background-color: rgb(0, 0, 0);
+}
+input[type=range]:disabled::-ms-thumb {
+    background-color: rgb(146, 146, 146);
+}
+
+.win-ui-dark input[type=range]::-ms-ticks-before,
+.win-ui-dark input[type=range]::-ms-ticks-after {
+    color: rgba(255, 255, 255, 0.5);
+}
+input[type=range]::-ms-ticks-before,
+input[type=range]::-ms-ticks-after {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/*
+Back button control colors.
+*/
+.win-ui-dark .win-backbutton {
+    background-color: transparent;
+    border-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+}
+.win-ui-dark .win-backbutton:hover {
+    background-color: rgba(255, 255, 255, 0.13);
+    border-color: rgb(255, 255, 255);
+}
+.win-ui-dark .win-backbutton:hover:active {
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+.win-ui-dark .win-backbutton:-ms-keyboard-active {
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+.win-ui-dark .win-backbutton:disabled, .win-ui-dark .win-backbutton:disabled:active {
+    background-clip: padding-box;
+    background-color: transparent;
+    border-color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.4);
+}
+.win-backbutton {
+    background-color: transparent;
+    border-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+}
+.win-backbutton:hover {
+    background-color: rgba(0, 0, 0, 0.13);
+    border-color: rgb(0, 0, 0);
+}
+.win-backbutton:hover:active {
+    background-color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+.win-backbutton:-ms-keyboard-active {
+    background-color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+.win-backbutton:disabled, .win-backbutton:disabled:active {
+    background-clip: padding-box;
+    background-color: transparent;
+    border-color: rgba(0, 0, 0, 0.4);
+    color: rgba(0, 0, 0, 0.4);
+}
+
+@media (-ms-high-contrast) 
+{
+    /*
+    Typographic color definitions.
+    */
+    .win-type-interactive {
+        color: WindowText;
+    }
+    .win-type-interactive:hover, .win-type-interactive:hover:active {
+        color: -ms-hotlight;
+    }
+    .win-type-interactive:-ms-keyboard-active {
+        color: -ms-hotlight;
+    }
+
+    /*
+    Text selection high contrast color.
+    */
+    ::selection, select:focus::-ms-value {
+        background-color: Highlight;
+        color: HighlightText;
+    }
+
+    /*
+    Button high contrast colors.
+    */
+    button, input[type=button], input[type=reset],
+    input[type=file]::-ms-browse, input::-ms-clear,
+    input::-ms-reveal, select::-ms-expand, .win-backbutton, .win-semanticzoom-button {
+        background-color: ButtonFace;
+        border-color: ButtonText;
+        color: ButtonText;
+    }
+    button[type=submit], input[type=submit] {
+        background-color: Highlight;
+        border-color: ButtonText;
+        color: HighlightText;
+    }
+    button:hover, input[type=button]:hover, input[type=reset]:hover,
+    input::-ms-clear:hover, input::-ms-reveal:hover,
+    input[type=file]::-ms-browse:hover, .win-backbutton:hover, .win-semanticzoom-button:hover {
+        background-color: Highlight;
+        border-color: ButtonText;
+        color: HighlightText;
+    }
+    button:hover:active, button[type=submit]:hover:active, input[type=button]:hover:active,
+    input[type=submit]:hover:active, input[type=reset]:hover:active,
+    input::-ms-clear:hover:active, input::-ms-reveal:hover:active,
+    input[type=file]::-ms-browse:hover:active, .win-backbutton:hover:active, 
+    .win-semanticzoom-button:hover:active {
+        background-clip: border-box;
+        background-color: ButtonText;
+        border-color: transparent;
+        color: ButtonFace;
+    }
+    button:-ms-keyboard-active, button[type=submit]:-ms-keyboard-active, input[type=button]:-ms-keyboard-active,
+    input[type=submit]:-ms-keyboard-active, input[type=reset]:-ms-keyboard-active,
+    .win-backbutton:-ms-keyboard-active, .win-semanticzoom-button:-ms-keyboard-active {
+        background-clip: border-box;
+        background-color: ButtonText;
+        border-color: transparent;
+        color: ButtonFace;
+    }
+    button:disabled, button[type=submit]:disabled, input[type=button]:disabled,
+    input[type=submit]:disabled, input[type=reset]:disabled,
+    input[type=file]:disabled::-ms-browse, input:disabled::-ms-clear, input:disabled::-ms-reveal,
+    select:disabled::-ms-expand, .win-backbutton:disabled,
+    button:disabled:active, button[type=submit]:disabled:active, input[type=button]:disabled:active,
+    input[type=submit]:disabled:active, input[type=reset]:disabled:active,
+    input[type=file]:disabled::-ms-browse:active, .win-backbutton:disabled:active {
+        background-color: ButtonFace;
+        border-color: GrayText;
+        color: GrayText;
+    }
+
+    /*
+    Text input, checkbox, radio, and select high contrast colors.
+    */
+    input[type=text], input[type=password],
+    input[type=email], input[type=number],
+    input[type=tel], input[type=url],
+    input[type=search], textarea, .win-textarea, select,
+    input::-ms-check {
+        background-color: ButtonFace;
+        border-color: ButtonText;
+        color: ButtonText;
+    }
+    input:hover::-ms-check { /* only checkbox and radio have hover state */
+        background-color: Highlight;
+        color: HighlightText;
+    }
+    input:hover:active::-ms-check { /* only checkbox and radio have active state */
+        background-clip: border-box;
+        background-color: ButtonText;
+        border-color: transparent;
+        color: ButtonFace;
+    }
+    input:-ms-keyboard-active::-ms-check { /* only checkbox and radio have active state */
+        background-clip: border-box;
+        background-color: ButtonText;
+        border-color: transparent;
+        color: ButtonFace;
+    }
+    input[type=text]:disabled, input[type=password]:disabled,
+    input[type=email]:disabled, input[type=number]:disabled,
+    input[type=tel]:disabled, input[type=url]:disabled, 
+    input[type=search]:disabled, input[type=file]::-ms-value,
+    textarea:disabled, .win-textarea:disabled, select:disabled,
+    input:disabled::-ms-check, input:disabled:active::-ms-check {
+        border-color: GrayText;
+        color: ButtonText;
+        background-color: ButtonFace;
+    }
+    input:disabled::-ms-check, input:disabled:active::-ms-check,
+    input[type]:-ms-input-placeholder, textarea:-ms-input-placeholder,
+    select:disabled::-ms-value {
+        color: GrayText;
+    }
+
+    /*
+    Select option high contrast colors.
+    */
+    option:checked, select:focus::-ms-value {
+        color: HighlightText;
+        background-color: Highlight;
+    }
+    select:active:not(:disabled)::-ms-value, select:active:not(:disabled)::-ms-expand,
+    option:hover:active, option:checked:hover:active {
+        color: ButtonFace;
+        background-color: ButtonText;
+    }
+    option:checked:disabled, option:checked:disabled:active,
+    optgroup:disabled option:checked, optgroup:disabled option:checked:active,
+    select:disabled option:checked, select:disabled option:checked:active,
+    select:disabled:focus::-ms-value {
+        color: ButtonFace;
+        background-color: GrayText;
+    }
+
+    /*
+    Link high contrast colors.
+    */
+    a {
+        color: -ms-hotlight;
+    }
+    a[disabled] {
+        color: GrayText;
+    }
+
+    /*
+    Progress high contrast colors.
+    */
+    progress {
+        border: 1px solid ButtonText;
+        background-color: ButtonFace;
+        color: Highlight;
+    }
+    progress:indeterminate {
+        border: transparent;
+    }
+    progress::-ms-fill {
+        border-right: 1px solid ButtonText;
+        background-color: Highlight;
+    }
+    progress.win-paused:not(:indeterminate)::-ms-fill {
+        background-color: GrayText;
+    }
+    progress.win-paused:not(:indeterminate) {
+        opacity: 1.0;
+    }
+
+    /*
+    Range control high contrast colors.
+    */
+    input[type=range]::-ms-track {
+        border: 1px solid ButtonText;
+        background-color: ButtonFace;
+        color: transparent;
+    }
+    input[type=range]:disabled::-ms-track {
+        border-color: GrayText;
+    }
+    input[type=range]::-ms-fill-lower {
+        background-color: Highlight;
+    }
+    input[type=range]:disabled::-ms-fill-lower {
+        background-color: transparent;
+    }
+    input[type=range]::-ms-ticks-before,
+    input[type=range]::-ms-ticks-after {
+        color: ButtonText;
+    }
+    input[type=range]:disabled::-ms-ticks-before,
+    input[type=range]:disabled::-ms-ticks-after {
+        color: GrayText;
+    }
+    input[type=range]::-ms-thumb {
+        background-color: ButtonText;
+        border-left: 1px solid HighlightText;
+        border-right: 1px solid HighlightText;
+    }
+    input[type=range].win-vertical::-ms-thumb {
+        border-left-style: none;
+        border-right-style: none;
+        border-top: 1px solid HighlightText;
+        border-bottom: 1px solid HighlightText;
+    }
+    input[type=range]:hover::-ms-thumb {
+        background-color: Highlight;
+    }
+    input[type=range]:active::-ms-thumb {
+        background-color: HighlightText;
+        border-color: ButtonText;
+    }
+    input[type=range]:disabled::-ms-thumb,
+    input[type=range]:disabled:active::-ms-thumb {
+        background-color: GrayText;
+        border-color: GrayText;
+    }
+	
+	    /*
+    Rating control high contrast colors.
+    */
+    .win-rating .win-star:before {
+        content: "\E082" !important;
+    }
+    .win-rating .win-star.win-full {
+        color: HighLight;
+    }
+    .win-rating .win-star.win-tentative.win-full {
+        color: ButtonText;
+    }
+    .win-rating .win-star.win-empty {
+        color: ButtonFace;
+    }
+    .win-rating .win-star:after {
+        content: "\E224" !important;
+        position: relative;
+        top: -100%;
+        color: ButtonText;
+    }
+
+}
+
+/*
+Weight and size definitions for typographic classes and elements.
+*/
+h1, .win-type-xx-large {
+    font-size: 42pt;
+    font-weight: 200;
+    letter-spacing: 0;
+    line-height: 1.1429; /* 64px when font-size is 42pt */
+}
+h2, .win-type-x-large {
+    font-size: 20pt;
+    font-weight: 200;
+    line-height: 1.2; /* 32px when font-size is 20pt */
+}
+h3, .win-type-large {
+    font-size: 11pt;
+    font-weight: 600;
+    line-height: 1.3636; /* 20px when font-size is 11pt */
+}
+h4, .win-type-medium, code, pre, samp {
+    font-size: 11pt;
+    font-weight: 400;
+    line-height: 1.3636; /* 20px when font-size is 11pt */
+}
+body, h5, .win-type-small, legend {
+    font-size: 11pt;
+    font-weight: 300;
+    line-height: 1.3636; /* 20px when font-size is 11pt */
+}
+
+body,
+.win-type-xx-large,
+.win-type-x-large,
+.win-type-large,
+.win-type-medium,
+.win-type-small,
+.win-type-x-small,
+.win-type-xx-small,
+input,
+textarea,
+.win-textarea,
+button,
+select,
+option {
+    font-family: 
+        "Segoe UI",
+        "Ebrima",
+        "Nirmala UI",
+        "Gadugi",
+        "Segoe UI Symbol",
+        "Meiryo UI",
+        "Khmer UI",
+        "Tunga",
+        "Lao UI",
+        "Raavi",
+        "Iskoola Pota",
+        "Latha",
+        "Leelawadee",
+        "Microsoft YaHei UI",
+        "Microsoft JhengHei UI",
+        "Malgun Gothic",
+        "Estrangelo Edessa",
+        "Microsoft Himalaya",
+        "Microsoft New Tai Lue",
+        "Microsoft PhagsPa",
+        "Microsoft Tai Le",
+        "Microsoft Yi Baiti",
+        "Mongolian Baiti",
+        "MV Boli",
+        "Myanmar Text",
+        "Cambria Math";
+}
+
+.active a{
+	background: rgba(55,55,55,0.3) !important;
+	color:white !important;
+}

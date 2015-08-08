@@ -1,0 +1,30 @@
+{% extends 'layout.twig' %}
+{% block body %}
+<div style="margin-top:50px; height:300px" class="gray">
+	<div class="container" style="padding-top:25px">
+		<div class="row">
+			<div class="col-lg-8">
+				<h1><b>Découvrez les nouveaux jeux</b></h1>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div style="margin-top:50px" class="container">
+	<div class="col-lg-10 col-lg-offset-1">
+		<div class="row">
+			{% for result in arrayObj %}
+			<div class="col-lg-4" style="margin-bottom:25px">
+				{% if result.img != null %}
+					<img src="{{ asset('/uploads/') }}{{ result.img }}" width=100%/>
+				{% endif %}
+				<h4 class="femerald"><b>{{ result.summary }}</b></h4>
+				<p>
+					{{ result.text }}
+				</p>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+{% endblock %}

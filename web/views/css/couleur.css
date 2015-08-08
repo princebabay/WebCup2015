@@ -1,0 +1,682 @@
+.lime{
+	background: rgb(164,196,0) !important;
+	color:white;
+}
+
+.flime{
+	color: rgb(164,196,0) !important;
+}
+
+.hov-lime{
+	transition:250ms ease;
+}
+.hov-lime:hover .tile-content {
+	color:#555;
+}
+
+
+.hov-lime:hover .brand .name{
+	color:#555;
+}
+
+.hov-lime:hover{
+  border-color: rgb(164,196,0) !important;
+  border-width:5px !important;
+  outline: 0 !important;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 15px rgba(164,196,0, 0.9) !important;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 15px rgba(164, 196, 0, 0.9)!important;
+  color:#bad80a !important;
+  transition:100ms ease !important;
+  background:#fffefa !important;
+}
+
+
+.white{
+	background: white !important;
+	color:black;
+}
+
+.fwhite{
+	color:white !important;
+}
+
+.green{
+	background: rgb(96,169,23) !important;
+	color:white !important;
+}
+
+.fgreen{
+	color: rgb(96,169,23) !important;
+}
+
+
+.hov-green{
+	transition:250ms ease;
+}
+.hov-green:hover .tile-content {
+	color:#555;
+}
+
+
+.hov-green:hover .brand .name{
+	color:#555;
+}
+
+.hov-green:hover{
+  border-color: rgb(96,169,23) !important;
+  border-width:5px !important;
+  outline: 0 !important;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 15px rgba(96, 169, 23, 0.9) !important;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 15px rgba(96, 169, 23, 0.9)!important;
+  color:#bad80a !important;
+  transition:100ms ease !important;
+  background:#fffefa !important;
+}
+
+.gray{
+	background: rgb(55,55,55) !important;
+	color:white;
+}
+
+.fgray{
+	color: rgb(55,55,55) !important;
+}
+
+
+.emerald{
+	background: rgb(0,138,0) !important;
+	color:white;
+}
+
+.femerald{
+	color: rgb(0,138,0) !important;
+}
+
+.hov-emerald{
+	transition:250ms ease;
+}
+.hov-emerald:hover .tile-content {
+	color:#555;
+}
+
+
+.hov-emerald:hover .brand .name{
+	color:#555;
+}
+
+.hov-emerald:hover{
+  border-color: rgb(0,138,0) !important;
+  border-width:5px !important;
+  outline: 0 !important;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 15px rgba(0, 138, 0, 0.9) !important;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 15px rgba(0, 138, 0, 0.9)!important;
+  color:#bad80a !important;
+  transition:100ms ease !important;
+  background:#fffefa !important;
+}
+
+
+.teal{
+	background: rgb(0,171,169) !important;
+	color:white;
+}
+
+.fteal{
+	color: rgb(0,171,169) !important;
+}
+
+.hov-teal{
+	transition:250ms ease;
+}
+.hov-teal:hover .tile-content {
+	color:#555;
+}
+
+
+.hov-teal:hover .brand .name{
+	color:#555;
+}
+
+.hov-teal:hover{
+  border-color: rgb(0,171,169) !important;
+  border-width:5px !important;
+  outline: 0 !important;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 15px rgba(0,171,169, 0.9) !important;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 15px rgba(0,171,169, 0.9)!important;
+  color:rgb(0,171,169) !important;
+  transition:100ms ease !important;
+  background:#fffefa !important;
+}
+
+
+
+.cyan{
+	background: rgb(27,161,226) !important;
+	color:white;
+}
+
+.fcyan{
+	color: rgb(27,161,226);
+}
+
+.hov-cyan{
+	transition:250ms ease;
+}
+.hov-cyan:hover .tile-content {
+	color:#555;
+}
+
+
+.hov-cyan:hover .brand .name{
+	color:#555;
+}
+
+.hov-cyan:hover{
+  border-color: rgb(27,161,226) !important;
+  border-width:5px !important;
+  outline: 0 !important;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 15px rgba(27,161,226, 0.9) !important;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 15px rgba(27,161,226, 0.9)!important;
+  color:rgb(27,161,226) !important;
+  transition:100ms ease !important;
+  background:#fffefa !important;
+}
+
+
+.cobalt{
+	background: rgb(0,80,239) !important;
+	color:white;
+}
+
+.fcobalt{
+	color: rgb(0,80,239) !important;
+}
+
+.hov-cobalt{
+	transition:250ms ease;
+}
+.hov-cobalt:hover .tile-content {
+	color:#555;
+}
+
+.hov-cobalt:hover .brand .name{
+	color:#555;
+}
+
+.hov-cobalt:hover{
+  border-color: rgb(0,80,239) !important;
+  border-width:5px !important;
+  outline: 0 !important;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 15px rgba(0,80,239, 0.9) !important;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 15px rgba(0,80,239, 0.9)!important;
+  color:rgb(0,80,239) !important;
+  transition:100ms ease !important;
+  background:#fffefa !important;
+}
+
+.indigo{
+	background: rgb(106,0,255) !important;
+	color:white;
+}
+
+.findigo{
+	color: rgb(106,0,255) !important;
+}
+
+.hov-indigo{
+	transition:250ms ease;
+}
+.hov-indigo:hover .tile-content {
+	color:#555;
+}
+
+.hov-indigo:hover .brand .name{
+	color:#555;
+}
+
+.hov-indigo:hover{
+  border-color: rgb(106,0,255) !important;
+  border-width:5px !important;
+  outline: 0 !important;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 15px rgba(106,0,255, 0.9) !important;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 15px rgba(106,0,255, 0.9)!important;
+  color:rgb(106,0,255) !important;
+  transition:100ms ease !important;
+  background:#fffefa !important;
+}
+
+.violet{
+	background: rgb(170,0,255) !important;
+	color:white;
+}
+
+.fviolet{
+	color: rgb(170,0,255) !important;
+}
+
+.hov-violet{
+	transition:250ms ease;
+}
+.hov-violet:hover .tile-content {
+	color:#555;
+}
+
+.hov-violet:hover .brand .name{
+	color:#555;
+}
+
+.hov-violet:hover{
+  border-color: rgb(170,0,255) !important;
+  border-width:5px !important;
+  outline: 0 !important;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 15px rgba(170,0,255, 0.9) !important;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 15px rgba(170,0,255, 0.9)!important;
+  color:rgb(170,0,255) !important;
+  transition:100ms ease !important;
+  background:#fffefa !important;
+}
+
+.pink{
+	background: rgb(224,114,208) !important;
+	color:white;
+}
+
+.fpink{
+	color: rgb(224,114,208) !important;
+}
+
+.hov-pink{
+	transition:250ms ease;
+}
+.hov-pink:hover .tile-content {
+	color:#555;
+}
+
+.hov-pink:hover .brand .name{
+	color:#555;
+}
+
+.hov-pink:hover{
+  border-color: rgb(224,114,208) !important;
+  border-width:5px !important;
+  outline: 0 !important;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 15px rgba(224,114,208, 0.9) !important;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 15px rgba(224,114,208, 0.9)!important;
+  color:rgb(224,114,208) !important;
+  transition:100ms ease !important;
+  background:#fffefa !important;
+}
+
+
+.magenta{
+	background: rgb(216,0,115) !important;
+	color:white;
+}
+
+.fmagenta{
+	color: rgb(216,0,115) !important;
+}
+
+.hov-magenta{
+	transition:250ms ease;
+}
+.hov-magenta:hover .tile-content {
+	color:#555;
+}
+
+.hov-magenta:hover .brand .name{
+	color:#555;
+}
+
+.hov-magenta:hover{
+  border-color: rgb(216,0,115) !important;
+  border-width:5px !important;
+  outline: 0 !important;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 15px rgba(216,0,115, 0.9) !important;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 15px rgba(216,0,115, 0.9)!important;
+  color:rgb(216,0,115) !important;
+  transition:100ms ease !important;
+  background:#fffefa !important;
+}
+
+
+.crimson{
+	background: rgb(162,0,37) !important;
+	color:white;
+}
+
+.fcrimson{
+	color: rgb(162,0,37) !important;
+}
+
+.hov-crimson{
+	transition:250ms ease;
+}
+.hov-crimson:hover .tile-content {
+	color:#555;
+}
+
+.hov-crimson:hover .brand .name{
+	color:#555;
+}
+
+.hov-crimson:hover{
+  border-color: rgb(162,0,37) !important;
+  border-width:5px !important;
+  outline: 0 !important;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 15px rgba(162,0,37, 0.9) !important;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 15px rgba(162,0,37, 0.9)!important;
+  color:rgb(162,0,37) !important;
+  transition:100ms ease !important;
+  background:#fffefa !important;
+}
+
+
+.red{
+	background: rgb(229,20,0) !important;
+	color:white;
+}
+
+.fred{
+	color: rgb(229,20,0) !important;
+}
+
+.hov-red{
+	transition:250ms ease;
+}
+.hov-red:hover .tile-content {
+	color:#555;
+}
+
+.hov-red:hover .brand .name{
+	color:#555;
+}
+
+.hov-red:hover{
+  border-color: rgb(229,20,0) !important;
+  border-width:5px !important;
+  outline: 0 !important;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 15px rgba(229,20,0, 0.9) !important;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 15px rgba(229,20,0, 0.9)!important;
+  color:rgb(229,20,0) !important;
+  transition:100ms ease !important;
+  background:#fffefa !important;
+}
+
+
+.orange{
+	background: rgb(250,104,0) !important;
+	color:white;
+}
+
+.forange{
+	color: rgb(250,104,0) !important;	
+}
+
+.hov-orange{
+	transition:250ms ease;
+}
+.hov-orange:hover .tile-content {
+	color:#555;
+}
+
+.hov-orange:hover .brand .name{
+	color:#555;
+}
+
+.hov-orange:hover{
+  border-color: rgb(250,104,0) !important;
+  border-width:5px !important;
+  outline: 0 !important;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 15px rgba(250,104,0, 0.9) !important;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 15px rgba(250,104,0, 0.9)!important;
+  color:rgb(250,104,0) !important;
+  transition:100ms ease !important;
+  background:#fffefa !important;
+}
+
+
+.amber{
+	background: rgb(240,163,10) !important;
+	color:white;
+}
+
+.famber{
+	color: rgb(240,163,10) !important;
+}
+
+.hov-amber{
+	transition:250ms ease;
+}
+.hov-amber:hover .tile-content {
+	color:#555;
+}
+
+.hov-amber:hover .brand .name{
+	color:#555;
+}
+
+.hov-amber:hover{
+  border-color: rgb(240,163,10) !important;
+  border-width:5px !important;
+  outline: 0 !important;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 15px rgba(240,163,10, 0.9) !important;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 15px rgba(240,163,10, 0.9)!important;
+  color:rgb(240,163,10) !important;
+  transition:100ms ease !important;
+  background:#fffefa !important;
+}
+
+
+
+.yellowW{
+	background:rgb(252, 209, 22) !important;
+	color:white;
+}
+
+a+.yellowW:hover{
+	color:rgb(252, 209, 22);
+}
+.fyellowW{
+	color:rgb(252, 209, 22) !important;
+}
+
+
+.hov-yellowW{
+	transition:250ms ease;
+}
+.hov-yellowW:hover .tile-content {
+	color:#555;
+}
+
+.hov-yellowW:hover .brand .name{
+	color:#555;
+}
+
+.hov-yellowW:hover{
+  border-color: rgb(252, 209, 22) !important;
+  border-width:5px !important;
+  outline: 0 !important;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 15px rgba(252, 209, 22, 0.9) !important;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 15px rgba(252, 209, 22, 0.9)!important;
+  color:rgb(252, 209, 22) !important;
+  transition:100ms ease !important;
+  background:#fffefa !important;
+}
+
+.brown{
+	background: rgb(130,90,44) !important;
+	color:white;
+}
+
+.fbrown{
+	color: rgb(130,90,44) !important;
+}
+
+.hov-brown{
+	transition:250ms ease;
+}
+.hov-brown:hover .tile-content {
+	color:#555;
+}
+
+.hov-brown:hover .brand .name{
+	color:#555;
+}
+
+.hov-brown:hover{
+  border-color: rgb(130,90,44) !important;
+  border-width:5px !important;
+  outline: 0 !important;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 15px rgba(130,90,44, 0.9) !important;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 15px rgba(130,90,44, 0.9)!important;
+  color:rgb(130,90,44) !important;
+  transition:100ms ease !important;
+  background:#fffefa !important;
+}
+
+
+.olive{
+	background: rgb(109,135,100) !important;
+	color:white;
+}
+
+.folive{
+	color: rgb(109,135,100) !important;
+}
+
+.hov-olive{
+	transition:250ms ease;
+}
+.hov-olive:hover .tile-content {
+	color:#555;
+}
+
+.hov-olive:hover .brand .name{
+	color:#555;
+}
+
+.hov-olive:hover{
+  border-color: rgb(109,135,100) !important;
+  border-width:5px !important;
+  outline: 0 !important;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 15px rgba(109,135,100, 0.9) !important;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 15px rgba(109,135,100, 0.9)!important;
+  color:rgb(109,135,100) !important;
+  transition:100ms ease !important;
+  background:#fffefa !important;
+}
+
+
+.steel{
+	background: rgb(100,118,115) !important;
+	color:white;
+}
+
+.fsteel{
+	color: rgb(100,118,115) !important;
+}
+
+.hov-steel{
+	transition:250ms ease;
+}
+.hov-steel:hover .tile-content {
+	color:#555;
+}
+
+.hov-steel:hover .brand .name{
+	color:#555;
+}
+
+.hov-steel:hover{
+  border-color: rgb(100,118,115) !important;
+  border-width:5px !important;
+  outline: 0 !important;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 15px rgba(100,118,115, 0.9) !important;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 15px rgba(100,118,115, 0.9)!important;
+  color:rgb(100,118,115) !important;
+  transition:100ms ease !important;
+  background:#fffefa !important;
+}
+
+
+.mauve{
+	background: rgb(118,96,138) !important;
+	color:white;
+}
+
+.fmauve{
+	color: rgb(118,96,138) !important;
+}
+
+.hov-mauve{
+	transition:250ms ease;
+}
+.hov-mauve:hover .tile-content {
+	color:#555;
+}
+
+.hov-mauve:hover .brand .name{
+	color:#555;
+}
+
+.hov-mauve:hover{
+  border-color: rgb(118,96,138) !important;
+  border-width:5px !important;
+  outline: 0 !important;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 15px rgba(118,96,138, 0.9) !important;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 15px rgba(118,96,138, 0.9)!important;
+  color:rgb(118,96,138) !important;
+  transition:100ms ease !important;
+  background:#fffefa !important;
+}
+
+
+.taupe{
+	background: rgb(135,121,178) !important;
+	color:white;
+}
+
+.ftaupe{
+	color: rgb(135,121,178) !important;
+}
+
+.hov-taupe{
+	transition:250ms ease;
+}
+.hov-taupe:hover .tile-content {
+	color:#555;
+}
+
+.hov-taupe:hover .brand .name{
+	color:#555;
+}
+
+.hov-taupe:hover{
+  border-color: rgb(135,121,178) !important;
+  border-width:5px !important;
+  outline: 0 !important;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 15px rgba(135,121,178, 0.9) !important;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 15px rgba(135,121,178, 0.9)!important;
+  color:rgb(118,96,138) !important;
+  transition:100ms ease !important;
+  background:#fffefa !important;
+}
+
+
+.special{
+	background: #660099 !important;
+	color: white;
+}
+
+.fspecial{
+	color: #660099 !important;
+}
+
+.navbar li a:hover{
+	background: rgba(0,0,0,0.1);
+}
+
+.navbar li a:focus{
+	background: rgba(0,0,0,0.2);
+}

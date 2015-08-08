@@ -1,0 +1,60 @@
+<!Doctype html>
+<html>
+	<head>
+		{% block stylesheets %}
+			<link rel="stylesheet" href="{{ asset('/css/bootstrap.css') }}" />
+			<link rel="stylesheet" href="{{ asset('/css/couleur.css') }}" />
+			<link rel="stylesheet" href="{{ asset('/css/style.css') }}" />
+		{% endblock %}
+	</head>
+	<body>
+		<div class="navbar navbar-fixed-top navbar-default emerald" style="border:none; padding-bottom:0; height:51px">
+			<div class="container">
+			
+			<DIV class="navbar-header">
+				<BUTTON class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+					<SPAN class="sr-only">Toggle navigation</SPAN>         
+					<SPAN class="icon-bar"></SPAN>
+					<SPAN class="icon-bar"></SPAN>
+					<SPAN class="icon-bar"></SPAN>
+				</BUTTON>       
+				<a href="#" class="navbar-brand fwhite"><img src="{{ asset('/img/xbox-64.png') }}" width=32px 
+					style="position:absolute; left:55px; top: 10px"><b class="hidden-xs">XBOX</b></a>
+			</DIV>
+			<NAV class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+				<ul class="nav navbar-nav">
+					<li {% if home is defined %} class="active" {% endif %} ><a 
+						{% if home is not defined %} class="fwhite" {% endif %} href="{{ app.url_generator.generate('homepage') }}"><b>Home</b></a></li>
+					<li {% if produit is defined %} class="active" {% endif %} ><a href=" {{ app.url_generator.generate('produitpage') }} " class="fwhite"><b>Produits</b></a></li>
+				</ul>				
+
+				<ul class="nav navbar-nav navbar-right " style="padding-right:10px">
+					<li {% if contact is defined %} class="active" {% endif %} ><a 
+					{% if contact is not defined %} class="fwhite" {% endif %} href="{{ app.url_generator.generate('contactpage') }}" ><b>Contact</b></a></li>
+					<li {% if search is defined %} class="active" {% endif %} ><a 
+					{% if search is not defined %} class="fwhite" {% endif %} href="{{ app.url_generator.generate('searchpage') }}" ><b>Search</b></a></li>
+					<form class="navbar-form navbar-left" role="search" action="{{ app.url_generator.generate('resultsearchpage') }}">
+					  <div class="form-group">
+						<input name="key" style="border:2px solid rgba(0,0,0,0.2)" type="text" class="" placeholder="Search">
+					  </div>
+					</form>					
+					<li {% if commande is defined %} class="active" {% endif %} ><a 
+					{% if commande is not defined %} class="fwhite" {% endif %} href="{{ app.url_generator.generate('commandepage') }}" ><b>Commande 
+					<i class="glyphicon  glyphicon-shopping-cart"></i></b></a></li>
+				</ul>
+			</NAV>
+
+
+			</div>
+		</div>
+		{% block body %}
+		
+		{% endblock %}
+		
+		
+		{% block javascripts %}
+			<script src="{{ asset('/js/jquery.js') }}"></script>
+			<script src="{{ asset('/js/bootstrap.min.js') }}"></script>
+		{% endblock %}
+	</body>
+</html>
