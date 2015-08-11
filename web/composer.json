@@ -1,0 +1,14 @@
+{
+    "require": {
+        "symfony/form": "^2.7",
+        "symfony/validator": "^2.7",
+        "symfony/config": "^2.7",
+        "symfony/translation": "^2.7",
+        "symfony/security-csrf": "^2.7",
+        "symfony/twig-bridge": "^2.7",
+        "symfony/security": "^2.7",
+        "symfony/serializer": "^2.7",
+        "monolog/monolog": "^1.16",
+        "symfony/yaml": "^2.7"
+    }
+}

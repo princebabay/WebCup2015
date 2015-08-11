@@ -71,7 +71,7 @@ $app->register(
 				'host' => 'localhost', 
 				'dbname' => 'silex', 
 				'user' => 'root', 
-				'password' => 'ipfp', 
+				'password' => '', 
 				'charset' => 'utf8mb4',
 			), 
 		))
@@ -86,7 +86,6 @@ $app['security.firewalls'] = array(
 	),
 );
 
-$app->register(new FormServiceProvider());
 
 $app->get('/', 
 	function () use ($app) { 
@@ -101,6 +100,14 @@ $app->get('/',
 		
 		return $app['twig']->render('hello.twig', array('home'=>'true')); 
 	})->bind('homepage');
+	
+//////////////////////////////////
+
+$app->get('/virtual', function () use ($app) { 
+		return $app['twig']->render('virtual.twig'); 
+	})->bind('virtualpage');
+
+/////////////////////////////////
 
 $app->get('/contact', function () use ($app) { 
 		return $app['twig']->render('contact.twig', array('contact'=>'true')); 
